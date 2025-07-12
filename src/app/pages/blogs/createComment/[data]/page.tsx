@@ -7,8 +7,6 @@ import { redirect, RedirectType } from 'next/navigation';
 
 
 export default async function DynamicRoute({params}) {
- 
-  let coloring = "yay";
 
   async function create(formData: FormData) {
     "use server";
