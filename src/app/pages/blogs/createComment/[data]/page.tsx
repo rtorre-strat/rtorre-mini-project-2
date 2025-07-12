@@ -10,11 +10,6 @@ export default async function DynamicRoute({params}) {
  
   let coloring = "yay";
 
-  function changer() {
-    coloring = "no";
-    console.log(coloring);
-  }
-
   async function create(formData: FormData) {
     "use server";
     const newComment: typeof blogComments.$inferInsert = {
